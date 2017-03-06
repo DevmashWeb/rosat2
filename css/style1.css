@@ -47,6 +47,9 @@ h1{
   margin-left: 65%;
 
 }
+small{
+  color: white;
+}
 .submit-button{
   border: none;
   background-color: transparent;
