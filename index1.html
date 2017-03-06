@@ -1,964 +1,962 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ROSAT</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ROSAT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/style1.css">
-  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/style1.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 
-  <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
 
-  <script src="bootstrap/css/bootstrap.min.css"></script>
-  <script src="bootstrap/css/bootstrap-theme.min.css"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/script1.js"></script>
+    <script src="bootstrap/css/bootstrap.min.css"></script>
+    <script src="bootstrap/css/bootstrap-theme.min.css"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script1.js"></script>
 
-  <style>
-    .carousel-inner > .item > img,
-    .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-    }
-  </style>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    <form>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-        <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <div id="section1" class="container-fluid ">
-                <!-- This is section 1
-            !!!!!!!!!!!!!!!!!!!
-            !!!!!!!!!!!!!!!!!!
-            -->
-                <!-- div container 1
-              !!!!!!!!!!!!!!!!!!!
-              !!!!!!!!!!!!!!!!!!
-              Student's Details-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <form id="section1" class="container-fluid ">
+
+                <!--- -----------------------------------------------------------
+                    div container 1 : Student's Details -->
                 <div class="container1 container-fluid ">
-                  <h1>Personal Details</h1>
-                  <h3>Student's Details</h3>
-                  <div class="form-group">
-                    <label for="text-input">Student's Name</label>
-                    <input type="text" class="form-control" placeholder="Enter name" required>
-                  </div>
-                  <fieldset class="form-group">
-                    <label>Gender</label>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" name="optionsRadios1" value="option1" checked >
-                        Male
-                      </label>
+                    <h1>Personal Details</h1>
+                    <h3>Student's Details</h3>
+                    <div class="form-group">
+                        <label for="text-input">Student's Name</label>
+                        <input type="text" class="form-control" placeholder="Enter name" required>
                     </div>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" name="optionsRadios1" value="option2">
-                        Female
-                      </label>
+                    <fieldset class="form-group">
+                        <label>Gender</label>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" name="optionsRadios1" value="option1" checked>
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" name="optionsRadios1" value="option2">
+                                Female
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <label for="usn-input">USN</label>
+                        <input type="text" class="form-control" placeholder="Enter USN" required>
                     </div>
-                  </fieldset>
-                  <div class="form-group">
-                    <label for="usn-input">USN</label>
-                    <input type="text" class="form-control" placeholder="Enter USN"  required>
-                  </div>
-                  <div class="form-group">
-                    <label for="aadhaar-input">Aadhar Number</label>
-                    <input type="text" class="form-control" placeholder="Enter Aadhar">
-                  </div>
-                  <div class="form-group">
-                    <label for="InputEmail1">Email address</label>
-                    <input type="email" class="form-control"  placeholder="Enter email" required>
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  </div>
-                  <div class="form-group">
-                    <label for="phone-input">Phone No</label>
-                    <input type="tel" class="form-control" placeholder="Phone No." required>
-                  </div>
-                  <div class="form-group">
-                    <label for="date-input" class="col-form-label">Date of Birth</label>
-                    <div class="col-10 date">
-                      <input class="form-control" type="date" placeholder ="yyyy-mm-dd" required>
+                    <div class="form-group">
+                        <label for="aadhaar-input">Aadhar Number</label>
+                        <input type="text" class="form-control" placeholder="Enter Aadhar">
                     </div>
-                  </div>
+                    <div class="form-group">
+                        <label for="InputEmail1">Email address</label>
+                        <input type="email" class="form-control" placeholder="Enter email" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-input">Phone No</label>
+                        <input type="tel" class="form-control" placeholder="Phone No." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-input" class="col-form-label">Date of Birth</label>
+                        <div class="col-10 date">
+                            <input class="form-control" type="date" placeholder="yyyy-mm-dd" required>
+                        </div>
+                    </div>
                 </div>
-                <!-- div container 2
-              !!!!!!!!!!!!!!!!!!!
-              !!!!!!!!!!!!!!!!!!
-              Father's Details-->
+
+                <!-- ------------------------------------------------------------
+                    div container 2 : Father's Details-->
                 <div class="container2 container-fluid">
-                  <h3>Father's Details</h3>
-                  <div class="form-group">
-                    <label for="text-input">Father's Name</label>
-                    <input type="text" class="form-control" placeholder="Enter name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="Select1">Qualification</label>
-                    <select class="form-control" >
-                      <option>Doctrate</option>
-                      <option>PG</option>
-                      <option>UG</option>
-                      <option>Higher Secondary</option>
-                      <option>Diploma</option>
-                      <option>Matriculation</option>
-                      <option>Below Matriculation</option>
-                      <option>No Formal Education</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Select1">Occupation</label>
-                    <select class="form-control" >
-                      <option>Profesional</option>
-                      <option>Business</option>
-                      <option>Government Services</option>
-                      <option>No Employement</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="text-input">Annual income</label>
-                    <input type="text" class="form-control"  placeholder="Enter anual income" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="InputEmail1">Email address</label>
-                    <input type="email" class="form-control"  placeholder="Enter email">
-                    <small  class="form-text text-muted">We'll never share this email with anyone else.</small>
-                  </div>
-                  <div class="form-group">
-                    <label for="phone-input">Phone No</label>
-                    <input type="tel" class="form-control" placeholder="Phone No." required>
-                  </div>
+                    <h3>Father's Details</h3>
+                    <div class="form-group">
+                        <label for="text-input">Father's Name</label>
+                        <input type="text" class="form-control" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">Qualification</label>
+                        <select class="form-control">
+                            <option>Doctrate</option>
+                            <option>PG</option>
+                            <option>UG</option>
+                            <option>Higher Secondary</option>
+                            <option>Diploma</option>
+                            <option>Matriculation</option>
+                            <option>Below Matriculation</option>
+                            <option>No Formal Education</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">Occupation</label>
+                        <select class="form-control">
+                            <option>Profesional</option>
+                            <option>Business</option>
+                            <option>Government Services</option>
+                            <option>No Employement</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="text-input">Annual income</label>
+                        <input type="text" class="form-control" placeholder="Enter anual income" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputEmail1">Email address</label>
+                        <input type="email" class="form-control" placeholder="Enter email">
+                        <small class="form-text text-muted">We'll never share this email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-input">Phone No</label>
+                        <input type="tel" class="form-control" placeholder="Phone No." required>
+                    </div>
                 </div>
-              <!-- div container 3
-            !!!!!!!!!!!!!!!!!!!
-            !!!!!!!!!!!!!!!!!!
-             Mother's Details-->
-             <div class="container3 container-fluid">
-                  <h3>Mother's Details</h3>
-                  <div class="form-group">
-                    <label for="text-input">Mother's Name</label>
-                    <input type="text" class="form-control" placeholder="Enter name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="Select1">Qualification</label>
-                    <select class="form-control" >
-                      <option>Doctrate</option>
-                      <option>PG</option>
-                      <option>UG</option>
-                      <option>Higher Secondary</option>
-                      <option>Diploma</option>
-                      <option>Matriculation</option>
-                      <option>Below Matriculation</option>
-                      <option>No Formal Education</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="Select1">Occupation</label>
-                    <select class="form-control" >
-                      <option>Profesional</option>
-                      <option>Business</option>
-                      <option>Government Services</option>
-                      <option>Home Maker</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="text-input">Annual income</label>
-                    <input type="text" class="form-control"  placeholder="Enter anual income">
-                  </div>
-                  <div class="form-group">
-                    <label for="InputEmail1">Email address</label>
-                    <input type="email" class="form-control"  placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share this email with anyone else.</small>
-                  </div>
-                  <div class="form-group">
-                    <label for="phone-input">Phone No</label>
-                    <input type="tel" class="form-control" placeholder="Phone No.">
-                  </div>
+
+                <!--- -----------------------------------------------------------
+                <!-- div container 3 : Mother's Details-->
+                <div class="container3 container-fluid">
+                    <h3>Mother's Details</h3>
+                    <div class="form-group">
+                        <label for="text-input">Mother's Name</label>
+                        <input type="text" class="form-control" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">Qualification</label>
+                        <select class="form-control">
+                            <option>Doctrate</option>
+                            <option>PG</option>
+                            <option>UG</option>
+                            <option>Higher Secondary</option>
+                            <option>Diploma</option>
+                            <option>Matriculation</option>
+                            <option>Below Matriculation</option>
+                            <option>No Formal Education</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">Occupation</label>
+                        <select class="form-control">
+                            <option>Profesional</option>
+                            <option>Business</option>
+                            <option>Government Services</option>
+                            <option>Home Maker</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="text-input">Annual income</label>
+                        <input type="text" class="form-control" placeholder="Enter anual income">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputEmail1">Email address</label>
+                        <input type="email" class="form-control" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share this email with anyone
+                            else.
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-input">Phone No</label>
+                        <input type="tel" class="form-control" placeholder="Phone No.">
+                    </div>
                 </div>
-              <!-- div container 4
-              !!!!!!!!!!!!!!!!!!!
-              !!!!!!!!!!!!!!!!!!
-               Address Details-->
-               <!-- TODO:add permanent address  shit-->
+
+                <!--- -----------------------------------------------------------
+                <!-- div container 4 : Address Details-->
+                <!-- TODO:add permanent address  shit-->
                 <div class="container4 container-fluid">
-                  <h3>Present Address</h3>
-                  <div class="form-group">
-                    <label for="text-input">District</label>
-                    <input type="text" class="form-control" placeholder="Enter district" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="text-input">Pin-Code</label>
-                    <input type="text" class="form-control"  placeholder="Enter pin-code" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="Select1">State</label>
-                    <select class="form-control" >
-                      <option>Andaman & NIcobar Islands</option>
-                      <option>Andhra Pradesh</option>
-                      <option>Arunachal Pradesh</option>
-                      <option>Assam</option>
-                      <option>Bihar</option>
-                      <option>Chandigarh</option>
-                      <option>Chattisgarh</option>
-                      <option>Dadra And Nagar Haveli</option>
-                      <option>Daman and Diu</option>
-                      <option>New Delhi</option>
-                      <option>Goa</option>
-                      <option>Gujarat</option>
-                      <option>Haryana</option>
-                      <option>Himachal Pradesh</option>
-                      <option>Jammu & Kashmir</option>
-                      <option>Jharkhand</option>
-                      <option>Krnataka</option>
-                      <option>Kerela</option>
-                      <option>Lakshadweep</option>
-                      <option>Madhya Pradesh</option>
-                      <option>Maharashtra</option>
-                      <option>Manipur</option>
-                      <option>Meghalaya</option>
-                      <option>Mizoram</option>
-                      <option>Nagaland</option>
-                      <option>Odisha</option>
-                      <option>Puducherry</option>
-                      <option>Punjab</option>
-                      <option>Rajasthan</option>
-                      <option>Sikkim</option>
-                      <option>Tamil Nadu</option>
-                      <option>Telangana</option>
-                      <option>Tripura</option>
-                      <option>Uttar Pradesh</option>
-                      <option>Uttarakhand</option>
-                      <option>West Bengal</option>
-                    </select>
-                  </div>
-                  <fieldset class="form-group">
-                    <label>Area</label>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" name="optionsRadios2" value="option1" checked>
-                        Urban
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" name="optionsRadios2" value="option2">
-                        Rural
-                      </label>
-                    </div>
-                  </fieldset>
-                  <label class="form-check-label">
-                    <input id="permanentAddrCheck"  type="checkbox" >
-                    Permanent Address is same as Current Address
-                  </label>
-                    <div id="permanent-address-wrap">
-                      <h3>Permanent Address</h3>
-                      <div class="form-group">
+                    <h3>Present Address</h3>
+                    <div class="form-group">
                         <label for="text-input">District</label>
                         <input type="text" class="form-control" placeholder="Enter district" required>
-                      </div>
-                      <div class="form-group">
+                    </div>
+                    <div class="form-group">
                         <label for="text-input">Pin-Code</label>
-                        <input type="text" class="form-control"  placeholder="Enter pin-code" required>
-                      </div>
+                        <input type="text" class="form-control" placeholder="Enter pin-code" required>
+                    </div>
                     <div class="form-group">
-                      <label for="Select1">State</label>
-                      <select class="form-control" >
-                        <option>Andaman & NIcobar Islands</option>
-                        <option>Andhra Pradesh</option>
-                        <option>Arunachal Pradesh</option>
-                        <option>Assam</option>
-                        <option>Bihar</option>
-                        <option>Chandigarh</option>
-                        <option>Chattisgarh</option>
-                        <option>Dadra And Nagar Haveli</option>
-                        <option>Daman and Diu</option>
-                        <option>New Delhi</option>
-                        <option>Goa</option>
-                        <option>Gujarat</option>
-                        <option>Haryana</option>
-                        <option>Himachal Pradesh</option>
-                        <option>Jammu & Kashmir</option>
-                        <option>Jharkhand</option>
-                        <option>Krnataka</option>
-                        <option>Kerela</option>
-                        <option>Lakshadweep</option>
-                        <option>Madhya Pradesh</option>
-                        <option>Maharashtra</option>
-                        <option>Manipur</option>
-                        <option>Meghalaya</option>
-                        <option>Mizoram</option>
-                        <option>Nagaland</option>
-                        <option>Odisha</option>
-                        <option>Puducherry</option>
-                        <option>Punjab</option>
-                        <option>Rajasthan</option>
-                        <option>Sikkim</option>
-                        <option>Tamil Nadu</option>
-                        <option>Telangana</option>
-                        <option>Tripura</option>
-                        <option>Uttar Pradesh</option>
-                        <option>Uttarakhand</option>
-                        <option>West Bengal</option>
-                      </select>
-                    </div>
-                    <fieldset class="form-group">
-                      <label>Area</label>
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" name="optionsRadios2" value="option1" checked>
-                          Urban
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" name="optionsRadios2" value="option2">
-                          Rural
-                        </label>
-                      </div>
-                    </fieldset>
-                  </div>
-                </div>
-                <a href="#myCarousel" role="button" data-slide="next" class="nextButton">
-                  <span class="nextButton"><img src="images/next.png"></span>
-                  <span class="sr-only">Next</span>
-              </a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div id="section2" class="container-fluid">
-                <!-- div container 6
-            !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            !!!!!!!!!!!!!!!!!!!!!!!!!
-            Class 10th details-->
-                <div class="container6 container-fluid">
-                  <h1>Academic Details</h1>
-                  <br>
-                  <h3>Class 10th Details</h3>
-                  <fieldset class="form-group">
-                    <div class="form-check">
-                      <label for="text-input">Score</label>
-                      <input type="text" class="form-control"  placeholder="Enter Score">
-                      <div>
-                        <label class="form-check-label">
-                          <input type="radio" name="optionsRadios3" value="option1" checked>
-                          GPA
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" name="optionsRadios3" value="option2">
-                          Grade
-                        </label>
-                      </div>
-                      <div>
-                        <label class="form-check-label">
-                          <input type="radio" name="optionsRadios3" value="option1" checked>
-                          Percentage
-                        </label>
-                      </div>
-                    </div>
-                  </fieldset>
-                  <div class="element-radio">
-                    <label class="title">Board</label>
-                    <div class="column column2">
-                      <label>
-                        <input type="radio" name="children" value="Yes" onChange="findselected()"/>
-                        <span>CBSE</span>
-                      </label>
-                    </div>
-                    <div class="column column2">
-                      <label>
-                        <input type="radio" name="children" value="Yes" onChange="findselected()"/>
-                        <span>ICSE</span>
-                      </label>
-                    </div>
-                    <span class="clearfix"></span>
-                  </div>
-                  <div class="column column2">
-                    <label>
-                      <input type="radio"  name="children" value="No" checked="checked" onChange="findselected()"/>
-                      <span>State</span>
-                      <div class="form-group">
-                        <select class="form-control" >
-                          <option>Andaman & NIcobar Islands</option>
-                          <option>Andhra Pradesh</option>
-                          <option>Arunachal Pradesh</option>
-                          <option>Assam</option>
-                          <option>Bihar</option>
-                          <option>Chandigarh</option>
-                          <option>Chattisgarh</option>
-                          <option>Dadra And Nagar Haveli</option>
-                          <option>Daman and Diu</option>
-                          <option>New Delhi</option>
-                          <option>Goa</option>
-                          <option>Gujarat</option>
-                          <option>Haryana</option>
-                          <option>Himachal Pradesh</option>
-                          <option>Jammu & Kashmir</option>
-                          <option>Jharkhand</option>
-                          <option>Krnataka</option>
-                          <option>Kerela</option>
-                          <option>Lakshadweep</option>
-                          <option>Madhya Pradesh</option>
-                          <option>Maharashtra</option>
-                          <option>Manipur</option>
-                          <option>Meghalaya</option>
-                          <option>Mizoram</option>
-                          <option>Nagaland</option>
-                          <option>Odisha</option>
-                          <option>Puducherry</option>
-                          <option>Punjab</option>
-                          <option>Rajasthan</option>
-                          <option>Sikkim</option>
-                          <option>Tamil Nadu</option>
-                          <option>Telangana</option>
-                          <option>Tripura</option>
-                          <option>Uttar Pradesh</option>
-                          <option>Uttarakhand</option>
-                          <option>West Bengal</option>
+                        <label for="Select1">State</label>
+                        <select class="form-control">
+                            <option>Andaman & NIcobar Islands</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Arunachal Pradesh</option>
+                            <option>Assam</option>
+                            <option>Bihar</option>
+                            <option>Chandigarh</option>
+                            <option>Chattisgarh</option>
+                            <option>Dadra And Nagar Haveli</option>
+                            <option>Daman and Diu</option>
+                            <option>New Delhi</option>
+                            <option>Goa</option>
+                            <option>Gujarat</option>
+                            <option>Haryana</option>
+                            <option>Himachal Pradesh</option>
+                            <option>Jammu & Kashmir</option>
+                            <option>Jharkhand</option>
+                            <option>Krnataka</option>
+                            <option>Kerela</option>
+                            <option>Lakshadweep</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Maharashtra</option>
+                            <option>Manipur</option>
+                            <option>Meghalaya</option>
+                            <option>Mizoram</option>
+                            <option>Nagaland</option>
+                            <option>Odisha</option>
+                            <option>Puducherry</option>
+                            <option>Punjab</option>
+                            <option>Rajasthan</option>
+                            <option>Sikkim</option>
+                            <option>Tamil Nadu</option>
+                            <option>Telangana</option>
+                            <option>Tripura</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Uttarakhand</option>
+                            <option>West Bengal</option>
                         </select>
-                      </div>
+                    </div>
+                    <fieldset class="form-group">
+                        <label>Area</label>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" name="optionsRadios2" value="option1" checked>
+                                Urban
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" name="optionsRadios2" value="option2">
+                                Rural
+                            </label>
+                        </div>
+                    </fieldset>
+                    <label class="form-check-label">
+                        <input id="permanentAddrCheck" type="checkbox">
+                        Permanent Address is same as Current Address
                     </label>
-                  </div>
-
-                  <div class="element-radio">
-                    <label class="title">Medium of instruction</label>
-                    <div class="column column11">
-                      <label>
-                        <input type="radio" name="childrenc" value="Yes" onChange="findselectedc()"/>
-                        <span>English</span>
-                      </label>
-                    </div>
-                    <div class="column column12">
-                      <label>
-                        <input type="radio"  name="childrenc" value="No" checked="checked" onChange="findselectedc()"/>
-                        <span>Local</span>
+                    <div id="permanent-address-wrap">
+                        <h3>Permanent Address</h3>
                         <div class="form-group">
-                          <input type="text" id="inputtextc" class="form-control"  placeholder="Mention">
+                            <label for="text-input">District</label>
+                            <input type="text" class="form-control" placeholder="Enter district" required>
                         </div>
-                      </label>
+                        <div class="form-group">
+                            <label for="text-input">Pin-Code</label>
+                            <input type="text" class="form-control" placeholder="Enter pin-code" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Select1">State</label>
+                            <select class="form-control">
+                                <option>Andaman & NIcobar Islands</option>
+                                <option>Andhra Pradesh</option>
+                                <option>Arunachal Pradesh</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Chandigarh</option>
+                                <option>Chattisgarh</option>
+                                <option>Dadra And Nagar Haveli</option>
+                                <option>Daman and Diu</option>
+                                <option>New Delhi</option>
+                                <option>Goa</option>
+                                <option>Gujarat</option>
+                                <option>Haryana</option>
+                                <option>Himachal Pradesh</option>
+                                <option>Jammu & Kashmir</option>
+                                <option>Jharkhand</option>
+                                <option>Krnataka</option>
+                                <option>Kerela</option>
+                                <option>Lakshadweep</option>
+                                <option>Madhya Pradesh</option>
+                                <option>Maharashtra</option>
+                                <option>Manipur</option>
+                                <option>Meghalaya</option>
+                                <option>Mizoram</option>
+                                <option>Nagaland</option>
+                                <option>Odisha</option>
+                                <option>Puducherry</option>
+                                <option>Punjab</option>
+                                <option>Rajasthan</option>
+                                <option>Sikkim</option>
+                                <option>Tamil Nadu</option>
+                                <option>Telangana</option>
+                                <option>Tripura</option>
+                                <option>Uttar Pradesh</option>
+                                <option>Uttarakhand</option>
+                                <option>West Bengal</option>
+                            </select>
+                        </div>
+                        <fieldset class="form-group">
+                            <label>Area</label>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="optionsRadios2" value="option1" checked>
+                                    Urban
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="optionsRadios2" value="option2">
+                                    Rural
+                                </label>
+                            </div>
+                        </fieldset>
                     </div>
-                    <span class="clearfix"></span>
-                  </div>
-                  <div class="form-check">
-                    <label for="text-input">School</label>
-                    <input type="text" class="form-control"  placeholder="Enter School" required>
-                  </div>
-                  <fieldset class="form-group">
-                    <label>Area</label>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" name="optionsRadios4" value="option1" checked>
-                        Urban
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" name="optionsRadios4" value="option2">
-                        Rural
-                      </label>
-                    </div>
-                  </fieldset>
                 </div>
-                <!-- div container 7
-                !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                !!!!!!!!!!!!!!!!!!!!!!!!!
-                Class 12th details-->
+
+
+                <a role="button" class="nextButton" data-aria-formId="section1">
+                    <input type="submit" style="display: none">
+                    <span class="nextButton"><img src="images/next.png"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </form>
+        </div>
+
+        <div class="item">
+            <form id="section2" class="container-fluid">
+
+                <!--- -----------------------------------------------------------
+                    div container 6 : Class 10th details -->
+                <div class="container6 container-fluid">
+                    <h1>Academic Details</h1>
+                    <br>
+                    <h3>Class 10th Details</h3>
+                    <fieldset class="form-group">
+                        <div class="form-check">
+                            <label for="text-input">Score</label>
+                            <input type="text" class="form-control" placeholder="Enter Score">
+                            <div>
+                                <label class="form-check-label">
+                                    <input type="radio" name="optionsRadios3" value="option1" checked>
+                                    GPA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="optionsRadios3" value="option2">
+                                    Grade
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-check-label">
+                                    <input type="radio" name="optionsRadios3" value="option1" checked>
+                                    Percentage
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="element-radio">
+                        <label class="title">Board</label>
+                        <div class="column column2">
+                            <label>
+                                <input type="radio" name="children" value="Yes" onChange="findselected()"/>
+                                <span>CBSE</span>
+                            </label>
+                        </div>
+                        <div class="column column2">
+                            <label>
+                                <input type="radio" name="children" value="Yes" onChange="findselected()"/>
+                                <span>ICSE</span>
+                            </label>
+                        </div>
+                        <span class="clearfix"></span>
+                    </div>
+                    <div class="column column2">
+                        <label>
+                            <input type="radio" name="children" value="No" checked="checked" onChange="findselected()"/>
+                            <span>State</span>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>Andaman & NIcobar Islands</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chandigarh</option>
+                                    <option>Chattisgarh</option>
+                                    <option>Dadra And Nagar Haveli</option>
+                                    <option>Daman and Diu</option>
+                                    <option>New Delhi</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jammu & Kashmir</option>
+                                    <option>Jharkhand</option>
+                                    <option>Krnataka</option>
+                                    <option>Kerela</option>
+                                    <option>Lakshadweep</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Odisha</option>
+                                    <option>Puducherry</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+                                </select>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="element-radio">
+                        <label class="title">Medium of instruction</label>
+                        <div class="column column11">
+                            <label>
+                                <input type="radio" name="childrenc" value="Yes" onChange="findselectedc()"/>
+                                <span>English</span>
+                            </label>
+                        </div>
+                        <div class="column column12">
+                            <label>
+                                <input type="radio" name="childrenc" value="No" checked="checked"
+                                       onChange="findselectedc()"/>
+                                <span>Local</span>
+                                <div class="form-group">
+                                    <input type="text" id="inputtextc" class="form-control" placeholder="Mention">
+                                </div>
+                            </label>
+                        </div>
+                        <span class="clearfix"></span>
+                    </div>
+                    <div class="form-check">
+                        <label for="text-input">School</label>
+                        <input type="text" class="form-control" placeholder="Enter School" required>
+                    </div>
+                    <fieldset class="form-group">
+                        <label>Area</label>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" name="optionsRadios4" value="option1" checked>
+                                Urban
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" name="optionsRadios4" value="option2">
+                                Rural
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!--- -----------------------------------------------------------
+                    div container 7 : Class 12th details -->
                 <div class="container7 container-fluid">
-                  <h3>Class 12th Details</h3>
-                  <fieldset class="form-group">
-                    <div class="form-check">
-                      <label for="text-input">Score</label>
-                      <input type="text" class="form-control"  placeholder="Enter Score %" required>
-                    </div>
-                  </fieldset>
-                  <div class="element-radio">
-                    <label class="title">Board</label>
-                    <div class="column column2">
-                      <label>
-                        <input type="radio" name="childreng" value="Yes" onChange="findselectedg()"/>
-                        <span>CBSE</span>
-                      </label>
-                    </div>
-                    <div class="column column2">
-                      <label>
-                        <input type="radio" name="childreng" value="Yes" onChange="findselectedg()"/>
-                        <span>ICSE</span>
-                      </label>
-                    </div>
-                    <span class="clearfix"></span>
-                    <div class="column column2">
-                      <label>
-                        <input type="radio"  name="childreng" value="No" checked="checked" onChange="findselectedg()"/>
-                        <span>State</span>
-                        <div class="form-group">
-                          <input type="text" id="inputtextg" class="form-control"  placeholder="Enter state">
-                        </div>
-                      </label>
-                    </div>
-                    <span class="clearfix"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="Select1">State</label>
-                    <select class="form-control" >
-                      <option>Andaman & NIcobar Islands</option>
-                      <option>Andhra Pradesh</option>
-                      <option>Arunachal Pradesh</option>
-                      <option>Assam</option>
-                      <option>Bihar</option>
-                      <option>Chandigarh</option>
-                      <option>Chattisgarh</option>
-                      <option>Dadra And Nagar Haveli</option>
-                      <option>Daman and Diu</option>
-                      <option>New Delhi</option>
-                      <option>Goa</option>
-                      <option>Gujarat</option>
-                      <option>Haryana</option>
-                      <option>Himachal Pradesh</option>
-                      <option>Jammu & Kashmir</option>
-                      <option>Jharkhand</option>
-                      <option>Krnataka</option>
-                      <option>Kerela</option>
-                      <option>Lakshadweep</option>
-                      <option>Madhya Pradesh</option>
-                      <option>Maharashtra</option>
-                      <option>Manipur</option>
-                      <option>Meghalaya</option>
-                      <option>Mizoram</option>
-                      <option>Nagaland</option>
-                      <option>Odisha</option>
-                      <option>Puducherry</option>
-                      <option>Punjab</option>
-                      <option>Rajasthan</option>
-                      <option>Sikkim</option>
-                      <option>Tamil Nadu</option>
-                      <option>Telangana</option>
-                      <option>Tripura</option>
-                      <option>Uttar Pradesh</option>
-                      <option>Uttarakhand</option>
-                      <option>West Bengal</option>
-                    </select>
-                  </div>
-                  <div class="form-check">
-                    <label for="text-input">School</label>
-                    <input type="text" class="form-control"  placeholder="Enter School" required>
-                  </div>
-                  <div class="area2">
+                    <h3>Class 12th Details</h3>
                     <fieldset class="form-group">
-                      <label>Area</label>
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" name="optionsRadio5" value="option1" checked>
-                          Urban
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" name="optionsRadio5" value="option2">
-                          Rural
-                        </label>
-                      </div>
-                    </fieldset>
-                  </div>
-                  <div class="element-radio">
-                    <label class="title">Medium of instruction</label>
-                    <div class="column column11">
-                      <label>
-                        <input type="radio" name="childrena" value="Yes" onChange="findselecteda()"/>
-                        <span>English</span>
-                      </label>
-                    </div>
-                    <div class="column column12">
-                      <label>
-                        <input type="radio"  name="childrena" value="No" checked="checked" onChange="findselecteda()"/>
-                        <span>Local</span>
-                        <div class="form-group">
-                          <input type="text" id="inputtexta" class="form-control"  placeholder="Mention">
+                        <div class="form-check">
+                            <label for="text-input">Score</label>
+                            <input type="text" class="form-control" placeholder="Enter Score %" required>
                         </div>
-                      </label>
-                    </div>
-                    <span class="clearfix"></span>
-                  </div>
-                </div>
-              <!-- div container 8
-                !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                !!!!!!!!!!!!!!!!!!!!!!!!!
-                Class Amission details-->
-                <div class="container8 container-fluid">
-                  <h3>Admission Details</h3>
-                  <div class="exam">
-                    <fieldset class="form-group">
-                      <label>Qualifying Exam</label>
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" name="optionsRadios6" value="option1" checked>
-                          CET
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" name="optionsRadios6" value="option2">
-                          Comed-K
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input type="radio" name="optionsRadios6" value="option3" required>
-                          None
-                        </label>
-                      </div>
                     </fieldset>
-                  </div>
-                  <div class="form-group">
-                    <label for="text-input">Score</label>
-                    <input type="text" class="form-control"  placeholder="Score" required>
-                    <label for="text-input">Rank</label>
-                    <input type="text" class="form-control"  placeholder="Rank" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="Select1">Admitted under quota</label>
-                    <select class="form-control" >
-                      <option>Rural Candidates</option>
-                      <option>Kannada Medium</option>
-                      <option>Jammu and Kashmir Migrants</option>
-                      <option>OBC/SC/ST under category - 1, 2A, 2B, 3A, 3B</option>
-                      <option>Defence Personnel of Karnataka Origin</option>
-                      <option>Sports Special Category</option>
-                      <option>Scouts and Guides</option>
-                      <option>NCC Category</option>
-                      <option>Supernumerary Category</option>
-                    </select>
-                  </div>
-                </div>
-                <!-- div container 13
-                !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                !!!!!!!!!!!!!!!!!!!!!!!!!
-                Interest details-->
-                <div class="container13 container-fluid">
-                  <h3>Interested In</h3>
-                  <div class="element-checkbox">
-                    <label class="title"></label>
-                    <div class="column column11">
-                      <label>
-                        <input type="checkbox"  value="" onChange="findselectedd()"/>
-                        <span>Enterprenuer</span>
-                      </label>
+                    <div class="element-radio">
+                        <label class="title">Board</label>
+                        <div class="column column2">
+                            <label>
+                                <input type="radio" name="childreng" value="Yes" onChange="findselectedg()"/>
+                                <span>CBSE</span>
+                            </label>
+                        </div>
+                        <div class="column column2">
+                            <label>
+                                <input type="radio" name="childreng" value="Yes" onChange="findselectedg()"/>
+                                <span>ICSE</span>
+                            </label>
+                        </div>
+                        <span class="clearfix"></span>
+                        <div class="column column2">
+                            <label>
+                                <input type="radio" name="childreng" value="No" checked="checked"
+                                       onChange="findselectedg()"/>
+                                <span>State</span>
+                                <div class="form-group">
+                                    <input type="text" id="inputtextg" class="form-control" placeholder="Enter state">
+                                </div>
+                            </label>
+                        </div>
+                        <span class="clearfix"></span>
                     </div>
-                    <div class="column column11">
-                      <label>
-                        <input type="checkbox"  value="" onChange="findselectedd()"/>
-                        <span>Professional</span>
-                      </label>
-                    </div>
-                    <div class="column column11">
-                      <label>
-                        <input type="checkbox"  value="" onChange="findselectedd()"/>
-                        <span>MTech</span>
-                      </label>
-                    </div>
-                    <div class="column column11">
-                      <label>
-                        <input type="checkbox"  value="" onChange="findselectedd()"/>
-                        <span>MS</span>
-                      </label>
-                    </div>
-                    <span class="clearfix"></span>
-                  </div>
-                </div>
-              <a href="#myCarousel" role="button" data-slide="next" class="nextButton">
-                <span class="nextButton"><img src="images/next.png"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-
-            <div class="item ">
-              <div id="section3" class="container-fluid">
-                <!-- div container 9
-              !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-              !!!!!!!!!!!!!!!!!!!!!!!!!
-              Curricular details-->
-                <div class="container9 container-fluid">
-                  <h1>Curricular, Co-curricular, extra-curricular information</h1>
-                  <br>
-                  <h3>Curricular Details</h3>
-                  <label>Awards</label>
-                  <br>
-                  <input class="dropdown" list="curr" name="curr" />
-                  <datalist id="curr">
-                    <option value="None">
-                    <option value="Best Student">
-                    <option value="School Captain">
-                    <option value="House/Club Captain">
-                    <option value="Certificate of Merit">
-                    <option value="Full Attendance">
-                    <option value="International Mathematics Olympiad (IMO)">
-                    <option value="International Physics Olympiad (IPhO)">
-                    <option value="International Chemistry Olympiad (IChO)">
-                    <option value="International Biology Olympiad (IBO)">
-                    <option value="International Informatics Olympiad(IOI)">
-                    <option value="NTSE">
-                  </datalist>
-                  <!-- <div class="form-group">
-                        <label for="InputFile">Attach file</label>
-                        <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-                        <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
-                      </div>-->
-                </div>
-
-                <!-- div container 10
-                !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-git ad                Co-Curricular details-->
-                <div class="container10 container-fluid">
-                  <h3>Co-Curricular Details</h3>
                     <div class="form-group">
-                      <label for="text-input">Name Technical Skill(s)</label>
-                      <div class="area">
-                        <input class="dropdown" list="skills" name="skills" />
-                        <datalist id="skills">
-                          <option value="None">
-                          <option value="Analytics">
-                          <option value="Analytical">
-                          <option value="Applications">
-                          <option value="Application Development">
-                          <option value="Big Data">
-                          <option value="Business Analytics">
-                          <option value="Business Intelligence">
-                          <option value="Business Process Modeling">
-                          <option value="Cloud Computing">
-                          <option value="Code">
-                          <option value="Coding">
-                          <option value="Computer">
-                          <option value="Communication">
-                          <option value="Content Strategy">
-                          <option value="Content Management">
-                          <option value="Configuration">
-                          <option value="Critical Thinking">
-                          <option value="Customer Support">
-                          <option value="Database">
-                          <option value="Data Analysis">
-                          <option value="Data Analytics">
-                          <option value="Data Intelligence">
-                          <option value="Data Mining">
-                          <option value="Data Science">
-                          <option value="Data Strategy">
-                          <option value="Data Storage">
-                          <option value="Database Administration">
-                          <option value="Design">
-                          <option value="Desktop Support">
-                          <option value="Developer">
-                          <option value="Development">
-                          <option value="Documentation">
-                          <option value="Emerging Technologies">
-                          <option value="File Systems">
-                          <option value="Flexibility">
-                          <option value="Hardware">
-                          <option value="Help Desk">
-                          <option value="Implementation">
-                          <option value="Internet">
-                          <option value="Information Systems">
-                          <option value="Installation">
-                          <option value="Integrated Technologies">
-                          <option value="IT Manager">
-                          <option value="IT Optimization">
-                          <option value="IT Security">
-                          <option value="IT Soft Skills">
-                          <option value="IT Solutions">
-                          <option value="IT Support">
-                          <option value="Languages">
-                          <option value="Logical Thinking">
-                          <option value="Leadership">
-                          <option value="Linux">
-                          <option value="Management">
-                          <option value="Messaging">
-                          <option value="Methodology">
-                          <option value="Metrics">
-                          <option value="Microsoft Office">
-                          <option value="Mobile Applications">
-                          <option value="Motivation">
-                          <option value="Networks">
-                          <option value="Network Operations">
-                          <option value="Networking">
-                          <option value="Operating Systems">
-                          <option value="Operations">
-                          <option value="Organization">
-                          <option value="Presentation">
-                          <option value="Programming">
-                          <option value="Problem Solving">
-                          <option value="Product Development">
-                          <option value="Product Support">
-                          <option value="Product Management">
-                          <option value="Product Training">
-                          <option value="Project Management">
-                          <option value="Repairs">
-                          <option value="Reporting">
-                          <option value="Search Engine Optimization (SEO)">
-                          <option value="Security">
-                          <option value="Servers">
-                          <option value="Software">
-                          <option value="Software Development">
-                          <option value="Software Engineering">
-                          <option value="Software Quality Assurance (QA)">
-                          <option value="Storage">
-                          <option value="Support">
-                          <option value="Systems Software">
-                          <option value="Team Building">
-                          <option value="Team Oriented">
-                          <option value="Teamwork">
-                          <option value="Tech Skills Listed by Job">
-                          <option value="Tech Support">
-                          <option value="Technical">
-                          <option value="Technology">
-                          <option value="Technical Services">
-                          <option value="Tech Skills Listed by Job">
-                          <option value="Technical Support">
-                          <option value="Technical Writing">
-                          <option value="Testing">
-                          <option value="Tools">
-                          <option value="Time Management">
-                          <option value="Technical Writing">
-                          <option value="Training">
-                          <option value="Troubleshooting">
-                          <option value="UI / UX">
-                          <option value="User Experience Design">
-                          <option value="Virtualization">
-                          <option value="Web">
-                          <option value="Web Development">
-                          <option value="Web Design">
-                        </datalist>
+                        <label for="Select1">State</label>
+                        <select class="form-control">
+                            <option>Andaman & NIcobar Islands</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Arunachal Pradesh</option>
+                            <option>Assam</option>
+                            <option>Bihar</option>
+                            <option>Chandigarh</option>
+                            <option>Chattisgarh</option>
+                            <option>Dadra And Nagar Haveli</option>
+                            <option>Daman and Diu</option>
+                            <option>New Delhi</option>
+                            <option>Goa</option>
+                            <option>Gujarat</option>
+                            <option>Haryana</option>
+                            <option>Himachal Pradesh</option>
+                            <option>Jammu & Kashmir</option>
+                            <option>Jharkhand</option>
+                            <option>Krnataka</option>
+                            <option>Kerela</option>
+                            <option>Lakshadweep</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Maharashtra</option>
+                            <option>Manipur</option>
+                            <option>Meghalaya</option>
+                            <option>Mizoram</option>
+                            <option>Nagaland</option>
+                            <option>Odisha</option>
+                            <option>Puducherry</option>
+                            <option>Punjab</option>
+                            <option>Rajasthan</option>
+                            <option>Sikkim</option>
+                            <option>Tamil Nadu</option>
+                            <option>Telangana</option>
+                            <option>Tripura</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Uttarakhand</option>
+                            <option>West Bengal</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <label for="text-input">School</label>
+                        <input type="text" class="form-control" placeholder="Enter School" required>
+                    </div>
+                    <div class="area2">
+                        <fieldset class="form-group">
+                            <label>Area</label>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="optionsRadio5" value="option1" checked>
+                                    Urban
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="optionsRadio5" value="option2">
+                                    Rural
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="element-radio">
+                        <label class="title">Medium of instruction</label>
+                        <div class="column column11">
+                            <label>
+                                <input type="radio" name="childrena" value="Yes" onChange="findselecteda()"/>
+                                <span>English</span>
+                            </label>
+                        </div>
+                        <div class="column column12">
+                            <label>
+                                <input type="radio" name="childrena" value="No" checked="checked"
+                                       onChange="findselecteda()"/>
+                                <span>Local</span>
+                                <div class="form-group">
+                                    <input type="text" id="inputtexta" class="form-control" placeholder="Mention">
+                                </div>
+                            </label>
+                        </div>
+                        <span class="clearfix"></span>
+                    </div>
+                </div>
 
-                      </div>
+                <!--- -----------------------------------------------------------
+                    div container 6 : Admission details -->
+                <div class="container8 container-fluid">
+                    <h3>Admission Details</h3>
+                    <div class="exam">
+                        <fieldset class="form-group">
+                            <label>Qualifying Exam</label>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="optionsRadios6" value="option1" checked>
+                                    CET
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="optionsRadios6" value="option2">
+                                    Comed-K
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="optionsRadios6" value="option3" required>
+                                    None
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <label for="text-input">Score</label>
+                        <input type="text" class="form-control" placeholder="Score" required>
+                        <label for="text-input">Rank</label>
+                        <input type="text" class="form-control" placeholder="Rank" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Select1">Admitted under quota</label>
+                        <select class="form-control">
+                            <option>Rural Candidates</option>
+                            <option>Kannada Medium</option>
+                            <option>Jammu and Kashmir Migrants</option>
+                            <option>OBC/SC/ST under category - 1, 2A, 2B, 3A, 3B</option>
+                            <option>Defence Personnel of Karnataka Origin</option>
+                            <option>Sports Special Category</option>
+                            <option>Scouts and Guides</option>
+                            <option>NCC Category</option>
+                            <option>Supernumerary Category</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--- -----------------------------------------------------------
+                    div container 13 : Interests -->
+                <div class="container13 container-fluid">
+                    <h3>Interested In</h3>
+                    <div class="element-checkbox">
+                        <label class="title"></label>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox" value="" onChange="findselectedd()"/>
+                                <span>Enterprenuer</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox" value="" onChange="findselectedd()"/>
+                                <span>Professional</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox" value="" onChange="findselectedd()"/>
+                                <span>MTech</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox" value="" onChange="findselectedd()"/>
+                                <span>MS</span>
+                            </label>
+                        </div>
+                        <span class="clearfix"></span>
+                    </div>
+                </div>
+
+                <!--data-slide="next" -->
+                <a role="button" class="nextButton" data-aria-formId="section2">
+                    <input type="submit" style="display: none">
+                    <span class="nextButton"><img src="images/next.png"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </form>
+        </div>
+
+        <div class="item ">
+            <form id="section3" class="container-fluid">
+                <!-- -----------------------------------------------------------
+                    div container 9 : Curricular details-->
+                <div class="container9 container-fluid">
+                    <h1>Curricular, Co-curricular, extra-curricular information</h1>
+                    <br>
+                    <h3>Curricular Details</h3>
+                    <label>Awards</label>
+                    <br>
+                    <input class="dropdown" list="curr" name="curr"/>
+                    <datalist id="curr">
+                        <option value="None">
+                        <option value="Best Student">
+                        <option value="School Captain">
+                        <option value="House/Club Captain">
+                        <option value="Certificate of Merit">
+                        <option value="Full Attendance">
+                        <option value="International Mathematics Olympiad (IMO)">
+                        <option value="International Physics Olympiad (IPhO)">
+                        <option value="International Chemistry Olympiad (IChO)">
+                        <option value="International Biology Olympiad (IBO)">
+                        <option value="International Informatics Olympiad(IOI)">
+                        <option value="NTSE">
+                    </datalist>
+                    <!-- <div class="form-group">
+                          <label for="InputFile">Attach file</label>
+                          <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                          <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+                        </div>-->
+                </div>
+
+                <!--- ----------------------------------------------------------
+                    div container 10 : Co-Curricular details-->
+                <div class="container10 container-fluid">
+                    <h3>Co-Curricular Details</h3>
+                    <div class="form-group">
+                        <label for="text-input">Name Technical Skill(s)</label>
+                        <div class="area">
+                            <input class="dropdown" list="skills" name="skills"/>
+                            <datalist id="skills">
+                                <option value="None">
+                                <option value="Analytics">
+                                <option value="Analytical">
+                                <option value="Applications">
+                                <option value="Application Development">
+                                <option value="Big Data">
+                                <option value="Business Analytics">
+                                <option value="Business Intelligence">
+                                <option value="Business Process Modeling">
+                                <option value="Cloud Computing">
+                                <option value="Code">
+                                <option value="Coding">
+                                <option value="Computer">
+                                <option value="Communication">
+                                <option value="Content Strategy">
+                                <option value="Content Management">
+                                <option value="Configuration">
+                                <option value="Critical Thinking">
+                                <option value="Customer Support">
+                                <option value="Database">
+                                <option value="Data Analysis">
+                                <option value="Data Analytics">
+                                <option value="Data Intelligence">
+                                <option value="Data Mining">
+                                <option value="Data Science">
+                                <option value="Data Strategy">
+                                <option value="Data Storage">
+                                <option value="Database Administration">
+                                <option value="Design">
+                                <option value="Desktop Support">
+                                <option value="Developer">
+                                <option value="Development">
+                                <option value="Documentation">
+                                <option value="Emerging Technologies">
+                                <option value="File Systems">
+                                <option value="Flexibility">
+                                <option value="Hardware">
+                                <option value="Help Desk">
+                                <option value="Implementation">
+                                <option value="Internet">
+                                <option value="Information Systems">
+                                <option value="Installation">
+                                <option value="Integrated Technologies">
+                                <option value="IT Manager">
+                                <option value="IT Optimization">
+                                <option value="IT Security">
+                                <option value="IT Soft Skills">
+                                <option value="IT Solutions">
+                                <option value="IT Support">
+                                <option value="Languages">
+                                <option value="Logical Thinking">
+                                <option value="Leadership">
+                                <option value="Linux">
+                                <option value="Management">
+                                <option value="Messaging">
+                                <option value="Methodology">
+                                <option value="Metrics">
+                                <option value="Microsoft Office">
+                                <option value="Mobile Applications">
+                                <option value="Motivation">
+                                <option value="Networks">
+                                <option value="Network Operations">
+                                <option value="Networking">
+                                <option value="Operating Systems">
+                                <option value="Operations">
+                                <option value="Organization">
+                                <option value="Presentation">
+                                <option value="Programming">
+                                <option value="Problem Solving">
+                                <option value="Product Development">
+                                <option value="Product Support">
+                                <option value="Product Management">
+                                <option value="Product Training">
+                                <option value="Project Management">
+                                <option value="Repairs">
+                                <option value="Reporting">
+                                <option value="Search Engine Optimization (SEO)">
+                                <option value="Security">
+                                <option value="Servers">
+                                <option value="Software">
+                                <option value="Software Development">
+                                <option value="Software Engineering">
+                                <option value="Software Quality Assurance (QA)">
+                                <option value="Storage">
+                                <option value="Support">
+                                <option value="Systems Software">
+                                <option value="Team Building">
+                                <option value="Team Oriented">
+                                <option value="Teamwork">
+                                <option value="Tech Skills Listed by Job">
+                                <option value="Tech Support">
+                                <option value="Technical">
+                                <option value="Technology">
+                                <option value="Technical Services">
+                                <option value="Tech Skills Listed by Job">
+                                <option value="Technical Support">
+                                <option value="Technical Writing">
+                                <option value="Testing">
+                                <option value="Tools">
+                                <option value="Time Management">
+                                <option value="Technical Writing">
+                                <option value="Training">
+                                <option value="Troubleshooting">
+                                <option value="UI / UX">
+                                <option value="User Experience Design">
+                                <option value="Virtualization">
+                                <option value="Web">
+                                <option value="Web Development">
+                                <option value="Web Design">
+                            </datalist>
+
+                        </div>
                     </div>
                     <div class="element-checkbox">
-                      <label class="title">Type</label>
-                      <div class="column column11">
-                        <label>
-                          <input type="checkbox" />
-                          <span>Training</span>
-                        </label>
-                      </div>
-                      <div class="column column11">
-                        <label>
-                          <input type="checkbox" />
-                          <span>Workshop</span>
-                        </label>
-                      </div>
-                      <div class="column column11">
-                        <label>
-                          <input type="checkbox" />
-                          <span>Certification Course</span>
-                        </label>
-                      </div>
-                      <div class="column column11">
-                        <label>
-                          <input type="checkbox" />
-                          <span>Self Trained</span>
-                        </label>
-                      </div>
-                      <span class="clearfix"></span>
+                        <label class="title">Type</label>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>Training</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>Workshop</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>Certification Course</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>Self Trained</span>
+                            </label>
+                        </div>
+                        <span class="clearfix"></span>
                     </div>
                     <div class="form-group">
-                      <h4>Inter-school/ inter college Competition</h4>
-                      <label class="title">Type</label>
-                      <div class="area2">
-                        <input class="dropdown" list="comp" name="comp" />
-                        <datalist id="comp">
-                          <option value="Technical/Science Quiz">
-                          <option value=" Debate">
-                          <option value="Group discussion">
-                          <option value="Essay writing">
-                          <option value="Paper presentation">
-                          <option value="Science projects">
-                          <option value="None">
-                        </datalist>
-                      </div>
+                        <h4>Inter-school/ inter college Competition</h4>
+                        <label class="title">Type</label>
+                        <div class="area2">
+                            <input class="dropdown" list="comp" name="comp"/>
+                            <datalist id="comp">
+                                <option value="Technical/Science Quiz">
+                                <option value=" Debate">
+                                <option value="Group discussion">
+                                <option value="Essay writing">
+                                <option value="Paper presentation">
+                                <option value="Science projects">
+                                <option value="None">
+                            </datalist>
+                        </div>
                     </div>
                 </div>
-                <!-- div container 11
-                !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                !!!!!!!!!!!!!!!!!!!!!!!!!
-                Extra-Curricular details-->
-                <div class="container11 container-fluid">
-                  <h3>Sports</h3>
-                  <h4>Extra-Curriculars</h4>
-                    <div class="form-group">
-                      <label>
-                        <span>Name of Sport(s)</span>
-                      </label>
-                      <div class="area3">
-                        <input class="dropdown" list="sports" name="sport" />
-                        <datalist id="sports">
-                          <option value="Archery">
-                          <option value="Athletics">
-                          <option value="Baseball">
-                          <option value="Basketball">
-                          <option value="Boxing">
-                          <option value="Cricket">
-                          <option value="Cycling">
-                          <option value="Darts">
-                          <option value="Football">
-                          <option value="Gymnastics">
-                          <option value="Hockey">
-                          <option value="Judo">
-                          <option value="Swimming">
-                          <option value="Table tennis">
-                          <option value="Tennis">
-                          <option value="Vollyball">
-                          <option value="Weightlifting">
-                          <option value="Wrestling">
-                          <option value="None">
 
-                        </datalist>
-                      </div>
+                <!-- ----------------------------------------------------------
+                    div container 11 : Extra-Curricular details -->
+                <div class="container11 container-fluid">
+                    <h3>Sports</h3>
+                    <h4>Extra-Curriculars</h4>
+                    <div class="form-group">
+                        <label>
+                            <span>Name of Sport(s)</span>
+                        </label>
+                        <div class="area3">
+                            <input class="dropdown" list="sports" name="sport"/>
+                            <datalist id="sports">
+                                <option value="Archery">
+                                <option value="Athletics">
+                                <option value="Baseball">
+                                <option value="Basketball">
+                                <option value="Boxing">
+                                <option value="Cricket">
+                                <option value="Cycling">
+                                <option value="Darts">
+                                <option value="Football">
+                                <option value="Gymnastics">
+                                <option value="Hockey">
+                                <option value="Judo">
+                                <option value="Swimming">
+                                <option value="Table tennis">
+                                <option value="Tennis">
+                                <option value="Vollyball">
+                                <option value="Weightlifting">
+                                <option value="Wrestling">
+                                <option value="None">
+
+                            </datalist>
+                        </div>
                     </div>
                     <div class="capacity">
-                      <label class="title">Capacity at which you participated</label>
-                      <div class="column column11">
-                        <label>
-                          <input type="checkbox"/>
-                          <span>Inter-school/Inter-college</span>
-                        </label>
-                      </div>
-                      <div class="column column11">
-                        <label>
-                          <input type="checkbox"/>
-                          <span>Taluk</span>
-                        </label>
-                      </div>
-                      <div class="column column11">
-                        <label>
-                          <input type="checkbox"/>
-                          <span>District</span>
-                        </label>
-                      </div>
-                      <div class="column column11">
-                        <label>
-                          <input type="checkbox"/>
-                          <span>State</span>
-                        </label>
-                      </div>
-                      <div class="column column11">
-                        <label>
-                          <input type="checkbox" />
-                          <span>National</span>
-                        </label>
-                      </div>
-                      <div class="column column11">
-                        <label>
-                          <input type="checkbox" />
-                          <span>International</span>
-                        </label>
-                      </div>
-                      <div class="column column11">
-                        <label>
-                          <input type="checkbox" />
-                          <span>None</span>
-                        </label>
-                      </div>
-                      <span class="clearfix"></span>
+                        <label class="title">Capacity at which you participated</label>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>Inter-school/Inter-college</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>Taluk</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>District</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>State</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>National</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>International</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>None</span>
+                            </label>
+                        </div>
+                        <span class="clearfix"></span>
                     </div>
                     <!--    <div class="form-group">
                        <label for="InputFile">Attach file</label>
@@ -967,100 +965,98 @@ git ad                Co-Curricular details-->
                      </div>-->
                 </div>
 
-                <!-- div container 10
-                !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                !!!!!!!!!!!!!!!!!!!!!!!!!
-                Extra-Curricular(cultural) details-->
-
+                <!-- ----------------------------------------------------------
+                    div container 12 : Extra-Curricular(cultural) details -->
                 <div class="container12 container-fluid">
-                  <h3>Cultural</h3>
-                  <div class="form-group">
-                    <label>
-                      <span>Name of Skill(s)</span>
-                    </label>
-                    <div class="area4">
-                      <input class="dropdown" list="cult" name="cult" />
-                      <datalist id="cult">
-                        <option value="Dance">
-                        <option value="Singing">
-                        <option value="Instrument">
-                        <option value="Modelling">
-                        <option value="Fashion Designing">
-                        <option value="Interior Designing">
-                        <option value="Stiching">
-                        <option value="Acting">
-                        <option value="Directing">
-                        <option value="DJ">
-                        <option value="Drawing">
-                        <option value="Craft">
-                        <option value="Painting">
-                        <option value="None">
-                      </datalist>
+                    <h3>Cultural</h3>
+                    <div class="form-group">
+                        <label>
+                            <span>Name of Skill(s)</span>
+                        </label>
+                        <div class="area4">
+                            <input class="dropdown" list="cult" name="cult"/>
+                            <datalist id="cult">
+                                <option value="Dance">
+                                <option value="Singing">
+                                <option value="Instrument">
+                                <option value="Modelling">
+                                <option value="Fashion Designing">
+                                <option value="Interior Designing">
+                                <option value="Stiching">
+                                <option value="Acting">
+                                <option value="Directing">
+                                <option value="DJ">
+                                <option value="Drawing">
+                                <option value="Craft">
+                                <option value="Painting">
+                                <option value="None">
+                            </datalist>
+                        </div>
                     </div>
-                  </div>
-                  <div class="capacity">
-                    <label class="title">Capacity at which you participated</label>
-                    <div class="column column11">
-                      <label>
-                        <input type="checkbox"/>
-                        <span>Inter-school/Inter-college</span>
-                      </label>
+                    <div class="capacity">
+                        <label class="title">Capacity at which you participated</label>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>Inter-school/Inter-college</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>Taluk</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>District</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>State</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>National</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>International</span>
+                            </label>
+                        </div>
+                        <div class="column column11">
+                            <label>
+                                <input type="checkbox"/>
+                                <span>None</span>
+                            </label>
+                        </div>
+                        <span class="clearfix"></span>
                     </div>
-                    <div class="column column11">
-                      <label>
-                        <input type="checkbox"/>
-                        <span>Taluk</span>
-                      </label>
-                    </div>
-                    <div class="column column11">
-                      <label>
-                        <input type="checkbox"/>
-                        <span>District</span>
-                      </label>
-                    </div>
-                    <div class="column column11">
-                      <label>
-                        <input type="checkbox"/>
-                        <span>State</span>
-                      </label>
-                    </div>
-                    <div class="column column11">
-                      <label>
-                        <input type="checkbox" />
-                        <span>National</span>
-                      </label>
-                    </div>
-                    <div class="column column11">
-                      <label>
-                        <input type="checkbox" />
-                        <span>International</span>
-                      </label>
-                    </div>
-                    <div class="column column11">
-                      <label>
-                        <input type="checkbox" />
-                        <span>None</span>
-                      </label>
-                    </div>
-                    <span class="clearfix"></span>
-                  </div>
 
-                  <!--   <div class="form-group">
-                        <label>Certification(if any)</label>
-                        <label for="InputFile">Attach file</label>
-                        <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-                        <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
-                      </div>
-                    -->
+                    <!--   <div class="form-group">
+                          <label>Certification(if any)</label>
+                          <label for="InputFile">Attach file</label>
+                          <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                          <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+                        </div>
+                      -->
                 </div>
-              </div>
-              <!-- TODO: validation -->
-              <button class="submit-button" type="submit">
-                <span class="icon" ><img src="images/submit.png"></span>
-              </button>
-            </div>
-            </div>
+
+                <!-- TODO: validation -->
+                <button class="submit-button" type="submit">
+                    <span class="icon"><img src="images/submit.png"></span>
+                </button>
+
+            </form>
         </div>
-    </form>
+    </div>
+</div>
 </body>
 </html>

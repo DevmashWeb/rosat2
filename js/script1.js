@@ -1,58 +1,69 @@
 function findselectedg() {
     var result = $('input[name="childreng"]:checked');
-    if(result){
+    if (result) {
         $("#inputtextg").setAttribute('disabled', true);
     }
-    else{
+    else {
         $("#inputtextg").removeAttribute('disabled');
     }
 }
 function findselecteda() {
     var result = $('input[name="childrena"]:checked');
-    if(result){
+    if (result) {
 
         $("#inputtexta").setAttribute('disabled', true);
     }
-    else{
+    else {
         $("#inputtexta").removeAttribute('disabled');
     }
 }
 function findselectedb() {
     var result = $('input[name="childrenb"]:checked');
-    if(result){
+    if (result) {
 
         $("#inputtextb").setAttribute('disabled', true);
     }
-    else{
+    else {
         $("#inputtextb").removeAttribute('disabled');
     }
 }
 function findselectedc() {
     var result = $('input[name="childrenc"]:checked');
-    if(result){
+    if (result) {
 
         $("#inputtextc").setAttribute('disabled', true);
     }
-    else{
+    else {
         $("#inputtextc").removeAttribute('disabled');
     }
 }
 
 function findselected() {
     var result = $('input[name="children"]:checked');
-    if(result){
+    if (result) {
 
         $("#inputtext").setAttribute('disabled', true);
     }
-    else{
+    else {
         $("#inputtext").removeAttribute('disabled');
     }
 }
-$( document ).ready(function () {
+$(document).ready(function () {
 
     $('#myCarousel').bind('slide.bs.carousel', function (e) {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
+        $("html, body").animate({scrollTop: 0}, "slow");
         console.log('slide event!');
+    });
+    
+    $('a.nextButton').on('click', function () {
+        const formID = '#' + $(this).attr('data-aria-formId');
+        console.log('form', $(formID))
+
+        if( $(formID)[0].checkValidity() ){
+            $(this).find('input[submit]').click();
+            console.log('valid')
+        }
+        console.log('invalid')
     });
 
 
@@ -60,4 +71,6 @@ $( document ).ready(function () {
         console.log('click');
         $('#permanent-address-wrap').slideToggle();
     })
+
+
 });
