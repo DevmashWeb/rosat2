@@ -54,17 +54,6 @@ $(document).ready(function () {
         $("html, body").animate({scrollTop: 0}, "slow");
         console.log('slide event!');
     });
-    
-    $('a.nextButton').on('click', function () {
-        const formID = '#' + $(this).attr('data-aria-formId');
-        console.log('form', $(formID))
-
-        if( $(formID)[0].checkValidity() ){
-            $(this).find('input[submit]').click();
-            console.log('valid')
-        }
-        console.log('invalid')
-    });
 
 
     $('#permanentAddrCheck').on('change', function () {
@@ -72,5 +61,9 @@ $(document).ready(function () {
         $('#permanent-address-wrap').slideToggle();
     })
 
+    $('#section1, #section2').on('submit', function (e) {
+        e.preventDefault();
+        $('#myCarousel').carousel('next');
+    })
 
 });
