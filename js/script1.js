@@ -1,53 +1,55 @@
 function findselectedg() {
-    var result = $('input[name="childreng"]:checked');
-    if (result) {
-        $("#inputtextg").setAttribute('disabled', true);
+    var result = document.querySelector('input[name="childreng"]:checked').value;
+    if(result=="Yes"){
+
+        document.getElementById("inputtextg").setAttribute('disabled', true);
     }
-    else {
-        $("#inputtextg").removeAttribute('disabled');
+    else{
+        document.getElementById("inputtextg").removeAttribute('disabled');
     }
 }
 function findselecteda() {
-    var result = $('input[name="childrena"]:checked');
-    if (result) {
+    var result = document.querySelector('input[name="childrena"]:checked').value;
+    if(result=="Yes"){
 
-        $("#inputtexta").setAttribute('disabled', true);
+        document.getElementById("inputtexta").setAttribute('disabled', true);
     }
-    else {
-        $("#inputtexta").removeAttribute('disabled');
+    else{
+        document.getElementById("inputtexta").removeAttribute('disabled');
     }
 }
 function findselectedb() {
-    var result = $('input[name="childrenb"]:checked');
-    if (result) {
+    var result = document.querySelector('input[name="childrenb"]:checked').value;
+    if(result=="Yes"){
 
-        $("#inputtextb").setAttribute('disabled', true);
+        document.getElementById("inputtextb").setAttribute('disabled', true);
     }
-    else {
-        $("#inputtextb").removeAttribute('disabled');
+    else{
+        document.getElementById("inputtextb").removeAttribute('disabled');
     }
 }
 function findselectedc() {
-    var result = $('input[name="childrenc"]:checked');
-    if (result) {
+    var result = document.querySelector('input[name="childrenc"]:checked').value;
+    if(result=="Yes"){
 
-        $("#inputtextc").setAttribute('disabled', true);
+        document.getElementById("inputtextc").setAttribute('disabled', true);
     }
-    else {
-        $("#inputtextc").removeAttribute('disabled');
+    else{
+        document.getElementById("inputtextc").removeAttribute('disabled');
     }
 }
 
 function findselected() {
-    var result = $('input[name="children"]:checked');
-    if (result) {
+    var result = document.querySelector('input[name="children"]:checked').value;
+    if(result=="Yes"){
 
-        $("#inputtext").setAttribute('disabled', true);
+        document.getElementById("inputtext").setAttribute('disabled', true);
     }
-    else {
-        $("#inputtext").removeAttribute('disabled');
+    else{
+        document.getElementById("inputtext").removeAttribute('disabled');
     }
 }
+
 $(document).ready(function () {
 
     $('#myCarousel').bind('slide.bs.carousel', function (e) {
