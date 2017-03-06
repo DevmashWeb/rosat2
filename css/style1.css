@@ -6,9 +6,9 @@ body {
   background-repeat: no-repeat;
 
 }
-#section1 {padding-top:50px;padding-left:50px;padding-right:50px;padding-bottom:50px;color: #fff; background-color: rgba(30,126,229,0.48);}
-#section2 {padding-top:50px;padding-left:50px;padding-right:50px;padding-bottom:50px;color: #fff; background-color:rgba(103, 58, 183, 0.46);;}
-#section3 {padding-top:50px;padding-left:50px;padding-right:50px;padding-bottom:50px;color: #fff; background-color:  rgba(68, 71, 80, 0.61);}
+#section1 {padding:50px;color: #fff; background-color: rgba(30,126,229,0.48);}
+#section2 {padding:50px;color: #fff; background-color:rgba(103, 58, 183, 0.46);;}
+#section3 {padding:50px;color: #fff; background-color:  rgba(68, 71, 80, 0.61);}
 .container1,.container2,.container3,
 .container4,.container5,.container6,
 .container7,.container8,.container9,
