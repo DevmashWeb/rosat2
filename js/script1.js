@@ -52,17 +52,31 @@ function findselected() {
 
 $(document).ready(function () {
 
+    // This is a callback function,
+    //     fires when a different section slides in
     $('#myCarousel').bind('slide.bs.carousel', function (e) {
+
+        // Smooth Scrolls to Top
         $("html, body").animate({scrollTop: 0}, "slow");
-        console.log('slide event!');
     });
 
 
+    // Listens for that checkbox and toggles the permanent address section.
     $('#permanentAddrCheck').on('change', function () {
-        console.log('click');
+
         $('#permanent-address-wrap').slideToggle();
+
+        // TODO: another function to copy the input values from current address to permanent address
+
     })
 
+    // Instead of integrating any function on that next btn,
+    // I made a Input type submit for every section and
+    // and replace the a.nextButton to a label target towards that submit button
+
+    // and made this listener which will fire on submit of first two forms
+    // so If the validation goes through it will slide to the next section
+    // else redirect to the invalid input.
     $('#section1, #section2').on('submit', function (e) {
         e.preventDefault();
         $('#myCarousel').carousel('next');
