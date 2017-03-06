@@ -55,4 +55,9 @@ $( document ).ready(function () {
         console.log('slide event!');
     });
 
+
+    $('#permanentAddrCheck').on('change', function () {
+        console.log('click');
+        $('#permanent-address-wrap').slideToggle();
+    })
 });

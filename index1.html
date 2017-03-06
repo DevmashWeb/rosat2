@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/style1.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery-2.1.4.min.js"></script>
 
+  <script src="bootstrap/css/bootstrap.min.css"></script>
+  <script src="bootstrap/css/bootstrap-theme.min.css"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="js/script1.js"></script>
 
@@ -246,6 +248,77 @@
                       </label>
                     </div>
                   </fieldset>
+                  <label class="form-check-label">
+                    <input id="permanentAddrCheck"  type="checkbox" >
+                    Permanent Address is same as Current Address
+                  </label>
+                    <div id="permanent-address-wrap">
+                      <h3>Permanent Address</h3>
+                      <div class="form-group">
+                        <label for="text-input">District</label>
+                        <input type="text" class="form-control" placeholder="Enter district" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="text-input">Pin-Code</label>
+                        <input type="text" class="form-control"  placeholder="Enter pin-code" required>
+                      </div>
+                    <div class="form-group">
+                      <label for="Select1">State</label>
+                      <select class="form-control" >
+                        <option>Andaman & NIcobar Islands</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Arunachal Pradesh</option>
+                        <option>Assam</option>
+                        <option>Bihar</option>
+                        <option>Chandigarh</option>
+                        <option>Chattisgarh</option>
+                        <option>Dadra And Nagar Haveli</option>
+                        <option>Daman and Diu</option>
+                        <option>New Delhi</option>
+                        <option>Goa</option>
+                        <option>Gujarat</option>
+                        <option>Haryana</option>
+                        <option>Himachal Pradesh</option>
+                        <option>Jammu & Kashmir</option>
+                        <option>Jharkhand</option>
+                        <option>Krnataka</option>
+                        <option>Kerela</option>
+                        <option>Lakshadweep</option>
+                        <option>Madhya Pradesh</option>
+                        <option>Maharashtra</option>
+                        <option>Manipur</option>
+                        <option>Meghalaya</option>
+                        <option>Mizoram</option>
+                        <option>Nagaland</option>
+                        <option>Odisha</option>
+                        <option>Puducherry</option>
+                        <option>Punjab</option>
+                        <option>Rajasthan</option>
+                        <option>Sikkim</option>
+                        <option>Tamil Nadu</option>
+                        <option>Telangana</option>
+                        <option>Tripura</option>
+                        <option>Uttar Pradesh</option>
+                        <option>Uttarakhand</option>
+                        <option>West Bengal</option>
+                      </select>
+                    </div>
+                    <fieldset class="form-group">
+                      <label>Area</label>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" name="optionsRadios2" value="option1" checked>
+                          Urban
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="radio" name="optionsRadios2" value="option2">
+                          Rural
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
                 </div>
                 <a href="#myCarousel" role="button" data-slide="next" class="nextButton">
                   <span class="nextButton"><img src="images/next.png"></span>
