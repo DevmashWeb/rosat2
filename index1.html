@@ -13,6 +13,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script1.js"></script>
 
+
     <style>
         .carousel-inner > .item > img,
         .carousel-inner > .item > a > img {
@@ -73,11 +74,9 @@
                         <input type="tel" class="form-control" placeholder="Phone No." required>
                     </div>
                     <div class="form-group">
-                        <label for="date-input" class="col-form-label">Date of Birth</label>
-                        <div class="col-10 date">
-                            <input class="form-control" type="date" placeholder="yyyy-mm-dd" required>
-                        </div>
-                    </div>
+                      <label for="start_date">Date of Birth</label>
+                      <input type="date" class="form-control" name="start_date" id="start_date" placeholder="mm/dd/yyyy">
+                       </div>
                 </div>
 
                 <!-- ------------------------------------------------------------
@@ -248,11 +247,11 @@
                         <h3>Permanent Address</h3>
                         <div class="form-group">
                             <label for="text-input">District</label>
-                            <input type="text" class="form-control" placeholder="Enter district" required>
+                            <input type="text" class="form-control" placeholder="Enter district" >
                         </div>
                         <div class="form-group">
                             <label for="text-input">Pin-Code</label>
-                            <input type="text" class="form-control" placeholder="Enter pin-code" required>
+                            <input type="text" class="form-control" placeholder="Enter pin-code" >
                         </div>
                         <div class="form-group">
                             <label for="Select1">State</label>
@@ -319,6 +318,7 @@
                     <span class="nextButton"><img src="images/next.png"></span>
                     <span class="sr-only">Next</span>
                 </label>
+
 
             </form>
         </div>
